@@ -45,7 +45,7 @@ export default ({ data, children }) => (
 );
 
 export const query = graphql`
-  query HomePageQuery {
+  query IndexQuery {
     site {
       siteMetadata {
         description

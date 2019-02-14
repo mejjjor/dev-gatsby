@@ -5,6 +5,7 @@ module.exports = {
       "Je propose des spectacles en jongleur, sculpteur de ballons et des spectacles de feu, à Paris et partout en France"
   },
   plugins: [
+    "gatsby-plugin-catch-links",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     {

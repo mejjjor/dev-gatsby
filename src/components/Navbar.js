@@ -5,6 +5,5 @@ export default () => (
     <h1>Manoel Mathis</h1>
 
     <h2>Artiste Performer</h2>
-    <a href="fdsfsd">un lien</a>
   </div>
 );
