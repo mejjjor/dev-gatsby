@@ -14,6 +14,7 @@ collections:
         label: "Contact"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/contact"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Mail", name: "mail", widget: "string"}
           - {label: "Téléphone", name: "phone", widget: "string"}
