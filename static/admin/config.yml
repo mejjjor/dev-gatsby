@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "page"
+    label: "Page"
+    files:
+      - file: "src/pages/contact/index.md"
+        name: "contact"
+        label: "Contact"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Mail", name: "mail", widget: "string"}
+          - {label: "Téléphone", name: "phone", widget: "string"}
+          - {label: "Texte", name: "body", widget: "markdown"}
