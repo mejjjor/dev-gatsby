@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 // import Navbar from "../components/Navbar";
 
 export const ContactPageTemplate = ({ title, body }) => {
+  console.log("eeeeeee", body);
   return (
     <div>
       un peu de cannooontact de home{title}
