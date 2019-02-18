@@ -8,7 +8,7 @@ export const ContactPageTemplate = ({ title, body }) => {
   return (
     <div>
       un peu de cannooontact de home{title}
-      <div dangerouslySetInnerHTML={{ __html: body }} />
+      <div className="contactPage" dangerouslySetInnerHTML={{ __html: body }} />
     </div>
   );
 };

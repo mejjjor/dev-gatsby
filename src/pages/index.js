@@ -2,7 +2,8 @@ import React from "react";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 
-import "../components/main.sass";
+import "../components/main.css";
+import "normalize.css/normalize.css";
 
 import Navbar from "../components/Navbar";
 
