@@ -1,10 +1,8 @@
 ---
 templateKey: contact-page
 path: /contact
-title: C'est plus un titre de maman !
+title: 'C''est plus un titre '
 mail: CONTACT@MANOEL-ARTISTE.FR
-phone: 06.29.64.17.82
+phone: 06.29.64
 ---
 PRENEZ CONTACT
-
-![un text alt](/img/au-dessus.jpg "sss")
