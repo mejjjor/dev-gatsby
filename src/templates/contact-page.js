@@ -9,7 +9,7 @@ export const ContactPageTemplate = ({ title, body }) => {
   return (
     <div>
       un peu de cannooontact de home{title}
-      <div className="contactPage" dangerouslySetInnerHTML={{ __html: body }} />
+      {body}
     </div>
   );
 };
