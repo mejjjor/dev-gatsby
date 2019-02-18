@@ -4,21 +4,25 @@ import { graphql } from "gatsby";
 
 // import Navbar from "../components/Navbar";
 
-export const ContactPageTemplate = ({title}) => {
+export const ContactPageTemplate = ({ title, body }) => {
   return (
     <div>
-        un peu de cannooontact de home{title}
+      un peu de cannooontact de home{title}
+      <div dangerouslySetInnerHTML={{ __html: body }} />
     </div>
-  )
-}
-
-const ContactPage = ({ data }) => {
-  return (
-    <ContactPageTemplate title={data.markdownRemark.frontmatter.title} />
   );
 };
 
-export default ContactPage
+const ContactPage = ({ data }) => {
+  return (
+    <ContactPageTemplate
+      title={data.markdownRemark.frontmatter.title}
+      body={data.markdownRemark.html}
+    />
+  );
+};
+
+export default ContactPage;
 
 export const query = graphql`
   query($path: String!) {
