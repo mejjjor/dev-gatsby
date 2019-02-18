@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import { ContactPageTemplate } from "../../templates/contact-page";
 
 const ContactPagePreview = ({ entry, widgetFor }) => {
-  console.log("ezaezaeza", widgetFor("body"));
-  console.log("ezaezaeza", entry.getIn(["data", "title"]));
   return (
     <ContactPageTemplate
       title={entry.getIn(["data", "title"])}
