@@ -2,13 +2,15 @@ import React from "react";
 import { graphql } from "gatsby";
 // import Helmet from "react-helmet";
 
-// import Navbar from "../components/Navbar";
+import Content, { HTMLContent } from "../components/Content";
 
-export const ContactPageTemplate = ({ title, body }) => {
+export const ContactPageTemplate = ({ title, body, contentComponent }) => {
+  const PageContent = contentComponent || Content;
+
   return (
     <div>
       un peu de cannooontact de home{title}
-      {body}
+      <PageContent content={body} />
     </div>
   );
 };
@@ -16,8 +18,9 @@ export const ContactPageTemplate = ({ title, body }) => {
 const ContactPage = ({ data }) => {
   return (
     <ContactPageTemplate
-      title={data.markdownRemark.frontmatter.title}
+      contentComponent={HTMLContent}
       body={data.markdownRemark.html}
+      title={data.markdownRemark.frontmatter.title}
     />
   );
 };
